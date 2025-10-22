@@ -46,7 +46,7 @@ async def execute_async_task(task_name: str, duration: int): #coroutine function
 
 async def async_main():
     await asyncio.gather(
-        execute_async_task("Task 1", 5),
+        execute_async_task2("Task 1", 5),
         execute_async_task("Task 2", 3),
         execute_async_task("Task 3", 5)
     )
