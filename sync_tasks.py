@@ -31,7 +31,7 @@ import asyncio
 
 async def execute_async_task(task_name: str, duration: int): #coroutine function
     print(f"Starting task - {task_name}")
-    # time.sleep(duration)
+    await asyncio.sleep(duration)
     print(f"Ending task - {task_name}")
 
 
