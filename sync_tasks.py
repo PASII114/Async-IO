@@ -42,4 +42,6 @@ async def async_main():
         execute_async_task("Task 3", 5)
     )
 
+    print("Hello World")
+
 asyncio.run(async_main()) #initiating our event loop
