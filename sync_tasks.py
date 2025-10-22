@@ -29,6 +29,15 @@ def main_threadpool():
 
 import asyncio
 
+async def execute_async_task2(task_name: str, duration: int): #coroutine function
+    print(f"Starting task - {task_name}")
+    for i in range(100000):
+        if i == 1:
+            await asyncio.sleep(0.000001)
+        print(i)
+    print(f"Ending task - {task_name}")
+
+
 async def execute_async_task(task_name: str, duration: int): #coroutine function
     print(f"Starting task - {task_name}")
     await asyncio.sleep(duration)
