@@ -29,4 +29,5 @@ async def main_background():
 
     print(results1, results2)
 
-asyncio.run(main())
+
+asyncio.run(main_background())
