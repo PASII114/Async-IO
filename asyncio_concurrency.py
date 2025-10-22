@@ -19,5 +19,14 @@ async def main():
 
     print(results)
 
+async def main_background():
+
+    task1 = asyncio.create_task(process_numbers(3, 3, 3))
+    task2 = asyncio.create_task(process_numbers(4, 3, 4))
+
+    results1 = await task1
+    results2 = await task2
+
+    print(results1, results2)
 
 asyncio.run(main())
